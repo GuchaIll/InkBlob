@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Forms</title>
+      <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Info</title>
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+ <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+
+    </head>
+    <body> <!--Navigation Bar-->
+        <nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="map.html">Map</a></li>
+        </nav>
+        <form action="http://www.example.com/review.php" method="get"> <!--Input Details-->
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>
+                    Name: <input type="text" name="name" size="30" maxlength="100">
+                </label>
+                <br/>
+                <label>
+                    Email: <input type="email" name="email" size="30" maxlength="100">
+                </label>
+                <br/>
+            </fieldset>
+            <br/>
+            <fieldset> <!--Feedback-->
+                <legend>Feedback:</legend>
+                <p>
+                    <label for="hear-about">How did you hear about us?</label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friends">Friend</option>
+                        <option value="festivals">Advert</option>
+                        <option value="flyers">Social Media</option>
+                       <option value="flyers">Other</option>
+                    </select>
+                </p>
+                <p>
+                    Was our service satisfactory?<br/>
+                    <label>
+                        <input type="radio" name="rating" value="Absolutely"/>Absolutely
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="Yes"/>Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="Neutral"/>Neutral
+                    </label>
+                  <label>
+                        <input type="radio" name="rating" value="No"/>No
+                    <label>
+                        <input type="radio" name="rating" value="Unsatisfactory"/>Unsatisfactory
+                </p>
+                <p>
+                    <label for="comments">Leave a Comment!:</label>
+                    <br/>
+                    <textarea rows="4" cols="40" id="comments"></textarea>
+                </p>
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked"/>Sign me up for email updates
+                </label>
+                <br/>
+                <input type="submit" value="Submit review"/>
+            </fieldset>
+        </form>
+     <footer> <!--Footer-->
+        <p>&copy; InkBlob.com. All rights reserved.</p>
+        <p>Contact: Tactical Squid   Email: tacticalsquid@gmail.com</p>
+    </footer>
+    </body>
+</html>
